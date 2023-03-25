@@ -12,6 +12,7 @@ More about m3u8 - https://www.rfc-editor.org/rfc/rfc8216#section-4.3.4.2
 python3 downloader.py URL FILENAME
 ```
 URL - URL to m3u8 file
+
 FILENAME - the mp4 final file that the script will generate
 
 
