@@ -62,7 +62,7 @@ def download_m3u8(m3u8_master_url, output_filename):
 
     print('Video saved to:', temp_name)
     print(f'Converting {temp_name} to {output_filename} ')
-    command = ["ffmpeg", "-i", temp_name, "-c:v", "libx264", output_filename]
+    command = ["ffmpeg", "-i", temp_name, "-map", "0", "-c", "copy", output_filename]
     subprocess.call(command)
     
 download_m3u8(url, output_filename)
